@@ -1,7 +1,9 @@
-import streamlit as sp
+import streamlit as st
 import pandas as pd
-import Prophet
+from fbprophet import Prophet
 import yfinance as yf
+
+st.title('KISSSS: Keep it simple stock selector (the last S is a typo)')
 
 def fcast(stock):
     """This function will take a stock and perform Prophet modeling on it and return the forecast dataframe"""
