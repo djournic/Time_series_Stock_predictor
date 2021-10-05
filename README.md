@@ -2,12 +2,18 @@
 
 
 Retail investors are a huge fad these days. And fad or not, they are here to stay. Pretty much everyone and their cousin knows about the Gamestop/Wall Street Bets drama that took place months ago. Companies like Robinhood began offering commission-free trading, and now almost all brokers do it. Millions of new investors are trying to make some quick cash.
+
+![alt text](https://upload.wikimedia.org/wikipedia/en/f/f0/WallStreetBets.png)
+
 ## The Business Problem:
    Most retail investors don't know what a P/E ratio is, or EBITA, or what 'Trading above 3 times valuation' means. They want a simple, quick answer to "Which stock should I buy?". That's what I'd like to solve here with somesimple time forecasting.
 Like I mentioned before, researching stocks is hard. Especially if you're looking at options trading, since those are far more influenced by the news of the day, and odd, unpredictable elements. And a lot of investors just don't want to put in the work.
 Enter KISSSS: Keep It Simple Stock Selector (the last 'S' is a typo). Where I'll use some simple time forecasting techniques to predict which of 4 stocks entered by the user stands the gain the most.
 This is similar to a previous project where I did some time forecasting on real estate data. One of the main lessons I've learned from the project, at least with ARIMA, the train-test split matters. So the first notebook is basically me trying to find the best train -test split to use with Auto ARIMA.
 The next notebook is where I play around more with Prophet, from Facebook. This library served me very well on the previous project, and I wanted to stick with it. There was no real need for various train-test splits, at least not in the forecasting side of things. Prophet only cares about that when it comes to cross validation.
+
+![alt text](https://i.kym-cdn.com/entries/icons/original/000/029/959/Screen_Shot_2019-06-05_at_1.26.32_PM.jpg)
+
 ## The Data:
 For testing the various splits, I need stock data to test with, so I found the following:
 S&P 500 stocks: https://datahub.io/core/s-and-p-500-companies
